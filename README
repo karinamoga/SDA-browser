@@ -1,0 +1,52 @@
+Functiitask.c:
+Aici am pus toate functiile pt fiecare task, in structuri.h am alocari si structuri iar in functii.c am functii auxilioare si de eliberare
+
+1. GenereazaIDNou:
+Se parcurge lista de taburi si returneaza un id nou,mai mare cu 1 decat cel mai mare id existent.
+
+2.Inserare tab final:
+insereaza un tab nou la finalul listei circulare, inainte de santinela, si se actualizeaza prev si next
+
+3.New tab:
+creeaza un tab nou, il insereaza in lista si il seteaza activ(current tab)
+
+4.CloseTab:
+Sterge tabul curent, cu tot cu stive. 
+Actualizeaza current_tab la tabul din stanga sau dreapta.
+Nu poti inchide tabul cu ID = 0
+Daca lista ramane goala, current_tab devine NULL
+
+5. Print tabs
+Afiseaza, circular, taburile din lista incepand de la current_tab. Pe linia urmatoare afiseaza description din current_page.
+
+6.Cauta in lista un tab cu id dat si il seteaza ca current_tab
+
+7.Next Tab si Prev tab:
+Muta tabul curent:
+NextTab il muta la dreapta
+PrevTab il muta la stanga
+Listele sunt circulare, deci daca urmatorul sau precedentul este santinela, se sare peste.
+
+8. DeschidePagina
+Schimba pagina curenta din tabul activ
+Salveaza current_page in backward
+Sterge complet stiva forward
+Seteaza pagina noua
+
+9. backward, forward 
+Backward:
+Scoate o pagina din backward
+Muta current_page in forward
+Seteaza noua pagina
+Forward:
+Scoate o pagina din forward
+Muta current_page in backward
+Seteaza noua pagina
+
+10.print histroy:
+Afiseaza istoricul complet pentru un tab dat:
+FORWARD: de jos in sus (folosind o stiva auxiliara)
+Pagina curenta
+BACKWARD: de sus in jos (normal) 
+
+
