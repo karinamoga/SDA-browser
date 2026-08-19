@@ -1,3 +1,11 @@
+This project is a C-based simulation of a web browser. It uses custom data structures to manage tabs and navigation history efficiently.
+Key features of the implementation:
+Tab Management: I used a circular doubly linked list with a sentinel to manage open tabs. This allows the user to open, close, and cycle through tabs (Next/Prev) seamlessly.
+Page Navigation: Each tab has its own browsing history, implemented using two stacks (Backward and Forward). This allows moving back and forth between visited web pages.
+The program supports various commands, such as opening specific tabs by their ID, loading new URLs, and printing the current open tabs or the full history of a specific tab.
+
+
+
 Functiitask.c:
 Aici am pus toate functiile pt fiecare task, in structuri.h am alocari si structuri iar in functii.c am functii auxilioare si de eliberare
 
